@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR-навигация</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .hero-section {
+            background-image: url('example2.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .btn-join {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f04e4e;
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-join:hover {
+            background-color: #d94444;
+        }
+        .contacts {
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+
+            .btn-join {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>VGOR</h1>
+            <p>Создайте удобную навигацию внутри зданий с помощью технологии дополненной реальности.</p>
+            <button class="btn-join" onclick="joinUs()">Присоединиться</button>
+            <footer class="contacts">
+                <p>Telegram: <a href="https://t.me/Driftknight8" target="_blank" style="color: #fff; text-decoration: none;">@Никита</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function joinUs() {
+            alert("Oooops, сервис еще находится в разработке. Мы скоро с вами свяжемся!");
+        }
+    </script>
+</body>
+</html>
